@@ -6,23 +6,25 @@
 <!--Test Automation Hire On Company -->
 <script type='text/javascript'>
         var d = document.createElement('div')
-d.innerText = 'WidgetConversationSinglePath';
+d.innerText = 'EmbeddedWidgetConversationSinglePath';
 document.body.appendChild(d);
 
 </script>
+<div style="min-width: 400px; min-height: 300px;padding: 0px" id="my-chat-widget"></div>
 <script type='text/javascript'>
     (function(o,l) {
         window.oliviaChatData = window.oliviaChatData || [];
         window.oliviaChatBaseUrl = o;
         window.oliviaChatData.push(['setKey', l]);
+        window.oliviaChatData.push(['setParent', 'my-chat-widget']);
         window.oliviaChatData.push(['start']);
         var apply = document.createElement('script');
         apply.type = 'text/javascript';
         apply.async = true;
-        apply.src = 'https://dawwjh1wd75jt.cloudfront.net/static/site/js/widget-client.js';
+        apply.src = 'https://d2xra9v1z0mbwm.cloudfront.net/static/site/js/widget-client.js';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(apply, s);
-    })('https://ltsstg.paradox.ai', 'jzdtzkvrsrvgwmswqgmf');
+    })('https://fedexstg.paradox.ai', 'isnxxazxegygpbrpkibr');
 </script>
 </body>
 </html>
